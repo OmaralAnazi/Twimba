@@ -1,3 +1,7 @@
+html {
+    zoom: 175%;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -59,7 +63,7 @@ textarea{
     line-height: 30px;
 }
 
-button{
+.blue-btn{
     background-color: #1DA1F2;
     border: none;
     color: white;
@@ -69,6 +73,47 @@ button{
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
+}
+
+.clickable-text {
+    text-align: center;
+    font-size: 11px;
+    
+    /* Centralize */
+    display: block;
+    justify-content: center;
+}
+
+.login-signup-links {
+    border: none;
+    background: none;
+    display: inline;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1DA1F2;
+}
+
+.login-signup-links:hover,
+.login-signup-links:focus {
+    color: #137cbc;
+}
+
+.blue-btn:hover,
+.blue-btn:focus {
+    background-color: #137cbc;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin: 5px auto 20px;
+}
+
+.smaller-btn {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
 }
 
 /* tweet */

@@ -1,0 +1,5 @@
+Features to add later:
+1- user can change the profile picture
+2- user can delete his previous tweets
+3- user can hide/report other user's tweets
+4- user can reply to any tweet

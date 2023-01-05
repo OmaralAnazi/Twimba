@@ -12,22 +12,55 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+	<title>Twimba</title>
 </head>
 
 <body> 
 	<header>
 		<h1>Twimba</h1>
 	</header>
+
 	<main>
-		<div class="tweet-input-area">
-			<img src="images/scrimbalogo.png" class="profile-pic">
-			<textarea placeholder="What's happening?" id="tweet-input"></textarea>
-		</div>
-		<button id="tweet-btn">Tweet</button>
-		<div class="feed" id="feed">
-			<!-- Tweets here!! -->
-		</div>
+
+		<section id="login-section" class="">
+			<form id="login-form">
+				<label for="login-email">Enter your Email:</label>
+				<input type="email" name="login-email" id="login-email"required>
+				<label for="login-password">Enter your Password:</label>
+				<input type="password" name="login-password" id="login-password" required>
+				<button class="blue-btn smaller-btn">Log In</button>
+			</form>
+			<p class="clickable-text">Don't have an account?<button class="login-signup-links">Sign up</button></p>
+		</section>
+
+
+		<section id="signup-section" class="hidden">
+			<form id="signup-form">
+				<label for="signup-email">Enter the Username:</label>
+				<input type="text" name="signup-username" id="signup-username" required>
+				<label for="signup-email">Enter the Email:</label>
+				<input type="email" name="signup-email" id="signup-email" required>
+				<label for="signup-password">Enter the Password:</label>
+				<input type="password" name="signup-password" id="signup-password" required>
+				<button class="blue-btn smaller-btn">Sign Up</button>
+			</form>
+			<p class="clickable-text">Have an account?<button class="login-signup-links">Log in</button></p>
+		</section>
+
+
+		<section id="content-section" class="hidden">
+			<div class="tweet-input-area">
+				<img src="images/scrimbalogo.png" class="profile-pic">
+				<textarea placeholder="What's happening?" id="tweet-input"></textarea>
+			</div>
+			<button id="tweet-btn" class="blue-btn">Tweet</button>
+			<div class="feed" id="feed">
+				<!-- Tweets here!! -->
+			</div>
+		</section>
+
 	</main>
+
 	<script src="index.js" type="module"></script>
 </body>
 
